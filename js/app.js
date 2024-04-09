@@ -1,5 +1,5 @@
 import Speller from "./speller.js";
-
+console.log("hello world")
 
 if (/complete|interactive|loaded/.test(document.readyState)) {
 	ready();
@@ -24,6 +24,7 @@ function ready(){
 
 	function onKeydown(evt) {
 		if (evt.key == "Enter") {
+            console.log("hello")
 			checkWord();
 		}
 	}
@@ -47,7 +48,7 @@ function ready(){
 			spellWord(symbols);
 		}
 		else {
-			wordSpellingEl.innerHTML = "<strong>-- couldn't spell it! --</strong>";
+			wordSpellingEl.innerHTML = "<strong>-- couldn't not spell it!!!! --</strong>";
 		}
 	}
 
@@ -56,6 +57,7 @@ function ready(){
 
 		for (let symbol of symbols) {
 			let elementEntry = Speller.lookup(symbol);
+            console.log(elementEntry)
 			let elementDiv = document.createElement("div");
 			elementDiv.className = "element";
 			elementDiv.innerHTML = `
