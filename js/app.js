@@ -48,7 +48,7 @@ function ready(){
 			spellWord(symbols);
 		}
 		else {
-			wordSpellingEl.innerHTML = "<strong>-- couldn't not spell it!!!! --</strong>";
+			wordSpellingEl.innerHTML = "<strong>-- couldn't not spell it!! --</strong>";
 		}
 	}
 
