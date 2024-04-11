@@ -40,7 +40,7 @@ function lookup(elementSymbol) {
 	// TODO: return the element entry based on specified
 	// symbol (case-insensitive)
 
-    
+    console.log(element)
     for(let element of elements){
         if(element.symbol.toLowerCase()==elementSymbol){
           return element  
